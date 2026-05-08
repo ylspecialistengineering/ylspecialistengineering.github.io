@@ -4,636 +4,107 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>YL Specialist Engineering | Toyota Forklift Parts Sydney</title>
-<meta name="description" content="Sydney's Toyota forklift parts specialist. Same-day delivery, no minimum order. Oil filters, air filters, LED lights, spark plugs and more. Call 0411 790 625."/>
-<style>
-/* ─── Reset & Base ─── */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Segoe UI',Arial,sans-serif;color:#1a2535;background:#f4f6f8;line-height:1.6}
-img{max-width:100%;display:block}
-a{text-decoration:none;color:inherit}
-
-/* ─── Variables ─── */
-:root{
-  --navy:#1B3A5F;
-  --navy-dark:#102540;
-  --navy-ink:#0B2038;
-  --orange:#E87000;
-  --orange-lt:#FF8C1A;
-  --white:#FFFFFF;
-  --gray:#f4f6f8;
-  --line:#dfe5ec;
-  --text:#1a2535;
-  --mid:#637082;
-}
-
-/* ─── NAV ─── */
-nav{
-  position:sticky;top:0;z-index:999;
-  background:rgba(16,37,64,.97);
-  backdrop-filter:blur(10px);
-  display:flex;align-items:center;justify-content:space-between;
-  padding:0 40px;height:76px;
-  box-shadow:0 2px 18px rgba(4,17,33,.28);
-}
-.nav-logo{
-  height:52px;width:150px;border-radius:7px;background:var(--white);
-  display:flex;align-items:center;justify-content:center;
-  box-shadow:0 8px 22px rgba(0,0,0,.2);
-}
-.nav-logo img{height:42px;width:auto;object-fit:contain}
-.nav-links{display:flex;gap:32px;align-items:center;list-style:none}
-.nav-links a{color:rgba(255,255,255,.86);font-size:.95rem;font-weight:600;letter-spacing:.01em;transition:color .2s}
-.nav-links a:hover{color:var(--orange)}
-.nav-cta{
-  background:var(--orange);color:var(--white)!important;
-  padding:10px 20px;border-radius:7px;font-weight:800;
-  transition:background .2s;
-}
-.nav-cta:hover{background:var(--orange-lt)}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
-.hamburger span{display:block;width:26px;height:2px;background:white;border-radius:2px}
-
-/* ─── HERO ─── */
-.hero{
-  background:linear-gradient(135deg, #f8fafc 0%, #eef3f8 52%, #e8edf3 100%);
-  min-height:82vh;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;
-  text-align:center;padding:80px 20px 60px;
-  position:relative;overflow:hidden;
-}
-.hero::before{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(90deg, rgba(27,58,95,.08) 0 1px, transparent 1px 100%),
-             linear-gradient(0deg, rgba(27,58,95,.06) 0 1px, transparent 1px 100%);
-  background-size:46px 46px;
-  mask-image:linear-gradient(to bottom, rgba(0,0,0,.6), transparent 82%);
-}
-.hero-badge{
-  position:relative;display:inline-block;background:#fff8f1;
-  border:1px solid rgba(232,112,0,.26);
-  color:#ad5200;font-size:.8rem;letter-spacing:.12em;font-weight:800;
-  padding:6px 18px;border-radius:20px;margin-bottom:24px;text-transform:uppercase;
-}
-.hero img.hero-logo{
-  position:relative;height:118px;width:auto;margin:0 auto 34px;
-  background:var(--white);border:1px solid rgba(27,58,95,.12);
-  border-radius:9px;padding:12px 24px;
-  box-shadow:0 18px 44px rgba(27,58,95,.14);
-}
-.hero h1{
-  position:relative;color:var(--navy-ink);font-size:clamp(2.2rem,5vw,3.7rem);
-  font-weight:850;line-height:1.08;max-width:860px;
-  margin-bottom:18px;
-}
-.hero h1 span{color:var(--orange)}
-.hero p.sub{
-  position:relative;color:#46586d;font-size:clamp(1rem,2.2vw,1.18rem);
-  max-width:720px;margin:0 auto 38px;
-}
-.hero-btns{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
-.btn{
-  display:inline-flex;align-items:center;gap:8px;
-  padding:14px 28px;border-radius:7px;font-size:1.02rem;font-weight:800;
-  cursor:pointer;transition:all .2s;border:none;
-}
-.btn-primary{background:var(--orange);color:var(--white)}
-.btn-primary:hover{background:var(--orange-lt);transform:translateY(-2px)}
-.btn-outline{background:var(--white);color:var(--navy);border:1px solid var(--line)}
-.btn-outline:hover{border-color:var(--orange);color:var(--orange);transform:translateY(-2px)}
-
-/* ─── SECTION BASE ─── */
-section{padding:88px 20px}
-.container{max-width:1140px;margin:0 auto}
-.section-tag{
-  color:var(--orange);font-size:.78rem;letter-spacing:.14em;font-weight:700;
-  text-transform:uppercase;margin-bottom:10px;
-}
-.section-title{
-  font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;
-  color:var(--navy);margin-bottom:16px;
-}
-.section-sub{color:var(--mid);font-size:1.08rem;max-width:580px;margin-bottom:56px;}
-
-/* ─── STATS STRIP ─── */
-.stats{
-  background:var(--navy-ink);padding:34px 20px;
-}
-.stats .container{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;
-}
-.stat-item h3{color:var(--white);font-size:1.8rem;font-weight:850}
-.stat-item p{color:rgba(255,255,255,.72);font-size:.86rem;font-weight:700;margin-top:4px}
-@media(max-width:700px){.stats .container{grid-template-columns:repeat(2,1fr)}}
-
-/* ─── PRODUCTS ─── */
-.products{background:var(--white)}
-.prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(245px,1fr));gap:18px}
-.prod-card{
-  background:var(--white);border-radius:8px;
-  padding:24px 22px;transition:all .25s;border:1px solid var(--line);
-}
-.prod-card:hover{
-  border-color:rgba(232,112,0,.55);transform:translateY(-3px);
-  box-shadow:0 12px 32px rgba(27,58,95,.12);
-}
-.prod-icon{
-  width:46px;height:32px;border-radius:5px;
-  background:rgba(27,58,95,.08);color:var(--navy);
-  display:flex;align-items:center;justify-content:center;
-  margin-bottom:18px;font-size:.8rem;font-weight:850;letter-spacing:.08em;
-}
-.prod-card h3{font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:8px}
-.prod-card p{color:var(--mid);font-size:.9rem;line-height:1.55}
-.prod-card .price-from{
-  margin-top:14px;display:inline-block;
-  background:rgba(232,112,0,.1);color:var(--orange);
-  padding:4px 12px;border-radius:20px;font-size:.82rem;font-weight:700;
-}
-
-/* ─── WHY US ─── */
-.why{background:var(--gray)}
-.why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:24px}
-.why-card{
-  background:var(--white);border-radius:8px;padding:30px 24px;
-  border-top:4px solid var(--orange);
-  box-shadow:0 4px 18px rgba(27,58,95,.07);
-}
-.why-card h3{font-size:1.08rem;font-weight:700;color:var(--navy);margin-bottom:10px}
-.why-card p{color:var(--mid);font-size:.93rem}
-.why-num{
-  font-size:2.5rem;font-weight:900;color:var(--orange);opacity:.18;
-  line-height:1;margin-bottom:6px;
-}
-
-/* ─── BRANDS ─── */
-.brands{background:var(--white);padding:60px 20px;text-align:center}
-.brand-list{
-  display:flex;flex-wrap:wrap;gap:16px;
-  justify-content:center;margin-top:36px;
-}
-.brand-chip{
-  background:var(--gray);border:1px solid var(--line);
-  padding:11px 24px;border-radius:6px;
-  font-weight:700;font-size:1rem;color:var(--navy);
-  letter-spacing:.04em;
-}
-
-/* ─── HOW TO ORDER ─── */
-.order{background:var(--navy);padding:90px 20px}
-.order .section-tag{color:rgba(232,112,0,.9)}
-.order .section-title{color:var(--white)}
-.order .section-sub{color:rgba(255,255,255,.6)}
-.steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:28px;margin-top:20px}
-.step{
-  background:rgba(255,255,255,.07);border-radius:8px;padding:32px 26px;
-  border:1px solid rgba(255,255,255,.1);position:relative;
-}
-.step-num{
-  width:48px;height:48px;border-radius:50%;
-  background:var(--orange);color:var(--white);
-  font-size:1.3rem;font-weight:900;
-  display:flex;align-items:center;justify-content:center;
-  margin-bottom:18px;
-}
-.step h3{color:var(--white);font-size:1.05rem;font-weight:700;margin-bottom:8px}
-.step p{color:rgba(255,255,255,.65);font-size:.92rem}
-
-/* ─── ABOUT ─── */
-.about{background:var(--white)}
-.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
-.about-text p{color:var(--mid);margin-bottom:16px;font-size:1rem;line-height:1.75}
-.about-text p strong{color:var(--navy)}
-.about-tag-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-.about-tag{
-  background:rgba(27,58,95,.07);color:var(--navy);
-  padding:6px 16px;border-radius:20px;font-size:.85rem;font-weight:600;
-}
-.about-qr{display:flex;flex-direction:column;align-items:center;gap:18px}
-.about-qr img{width:310px;border-radius:8px;border:1px solid var(--line);box-shadow:0 8px 32px rgba(27,58,95,.12)}
-.about-qr p{color:var(--mid);font-size:.88rem;text-align:center;max-width:220px}
-
-/* ─── CONTACT ─── */
-.contact{background:var(--gray)}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
-.contact-info h2{font-size:1.8rem;font-weight:800;color:var(--navy);margin-bottom:28px}
-.contact-row{
-  display:flex;align-items:center;gap:16px;
-  padding:16px 0;border-bottom:1px solid #e0e4ea;
-}
-.contact-row:last-child{border:none}
-.c-icon{
-  width:44px;height:44px;border-radius:8px;flex-shrink:0;
-  background:var(--navy);display:flex;align-items:center;justify-content:center;
-  font-size:.78rem;color:var(--white);font-weight:850;letter-spacing:.06em;
-}
-.contact-row h4{font-size:.78rem;color:var(--mid);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
-.contact-row a,
-.contact-row span{color:var(--navy);font-weight:600;font-size:.98rem}
-.contact-row a:hover{color:var(--orange)}
-.contact-form{background:var(--white);border-radius:8px;padding:38px;border:1px solid var(--line);box-shadow:0 4px 24px rgba(27,58,95,.08)}
-.contact-form h3{color:var(--navy);font-size:1.3rem;font-weight:800;margin-bottom:24px}
-.form-row{margin-bottom:18px}
-.form-row label{display:block;font-size:.82rem;font-weight:700;color:var(--navy);margin-bottom:6px;letter-spacing:.05em;text-transform:uppercase}
-.form-row input,.form-row textarea,.form-row select{
-  width:100%;padding:12px 16px;border-radius:7px;
-  border:2px solid #e0e4ea;font-size:.97rem;
-  font-family:inherit;transition:border .2s;
-}
-.form-row input:focus,.form-row textarea:focus,.form-row select:focus{
-  outline:none;border-color:var(--orange);
-}
-.form-row textarea{height:110px;resize:vertical}
-.btn-send{
-  width:100%;background:var(--navy);color:var(--white);
-  padding:14px;border-radius:7px;font-size:1rem;font-weight:800;
-  border:none;cursor:pointer;transition:background .2s;margin-top:6px;
-}
-.btn-send:hover{background:var(--orange)}
-
-/* ─── FOOTER ─── */
-footer{background:var(--navy-dark);color:rgba(255,255,255,.6);padding:48px 20px}
-.footer-inner{
-  max-width:1140px;margin:0 auto;
-  display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;align-items:center;
-}
-.footer-logo img{height:40px;filter:brightness(0) invert(1);opacity:.8}
-.footer-logo{background:var(--white);border-radius:7px;padding:7px 14px}
-.footer-logo img{filter:none;opacity:1}
-.footer-links{display:flex;gap:24px;flex-wrap:wrap}
-.footer-links a{color:rgba(255,255,255,.55);font-size:.88rem;transition:color .2s}
-.footer-links a:hover{color:var(--orange)}
-.footer-copy{font-size:.82rem;color:rgba(255,255,255,.4)}
-
-/* ─── MOBILE ─── */
-@media(max-width:860px){
-  .about-inner,.contact-grid{grid-template-columns:1fr;gap:40px}
-  .about-qr{display:none}
-}
-@media(max-width:640px){
-  nav{padding:0 20px}
-  .nav-links{
-    display:none;flex-direction:column;gap:0;
-    position:absolute;top:76px;left:0;right:0;
-    background:var(--navy);padding:12px 0;
-  }
-  .nav-links.open{display:flex}
-  .nav-links li a{display:block;padding:14px 28px}
-  .hamburger{display:flex}
-  .hero{min-height:auto;padding:68px 20px 56px}
-  .hero img.hero-logo{height:96px;max-width:92%;padding:10px 18px}
-  .hero-btns{flex-direction:column;align-items:center}
-  section{padding:64px 20px}
-}
-</style>
+<meta name="description" content="Sydney supplier for Toyota forklift service and repair parts. Filters, electrical, ignition, brake, hydraulic and service parts with fitment support."/>
+<link rel="stylesheet" href="css/site.css"/>
 </head>
 <body>
-
-<!-- ═══ NAV ═══ -->
 <nav>
-  <a href="#home" class="nav-logo">
-    <img src="assets/yl-logo.png" alt="YL Engineering Logo"/>
-  </a>
+  <a href="index.html" class="nav-logo"><img src="assets/yl-logo.png" alt="YL Specialist Engineering Logo"/></a>
   <ul class="nav-links" id="navLinks">
-    <li><a href="#products">Products</a></li>
-    <li><a href="#why">Why Us</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact"><span class="nav-cta">Get a Quote</span></a></li>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="brands.html">Brands</a></li>
+    <li><a href="parts-help.html">Parts Help</a></li>
+    <li><a href="ordering.html">Ordering</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html"><span class="nav-cta">Get a Quote</span></a></li>
   </ul>
-  <button class="hamburger" id="hamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
-<!-- ═══ HERO ═══ -->
-<section class="hero" id="home">
-  <div class="hero-badge">Sydney-Based Forklift Parts Supplier</div>
-  <img class="hero-logo" src="assets/yl-logo.png" alt="YL Specialist Engineering"/>
-  <h1>Toyota Forklift Parts,<br/><span>Sourced and Delivered Fast.</span></h1>
-  <p class="sub">
-    OEM-quality filters, lights, ignition, brake and electrical parts for Toyota forklifts,
-    with practical cross-reference support and fast dispatch from Sydney.
-  </p>
-  <div class="hero-btns">
-    <a href="tel:0411790625" class="btn btn-primary">Call 0411 790 625</a>
-    <a href="#products" class="btn btn-outline">View Products &#8594;</a>
-  </div>
-</section>
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <div class="hero-badge">Toyota Forklift Parts Sydney</div>
+        <img class="hero-logo" src="assets/yl-logo.png" alt="YL Specialist Engineering"/>
+        <h1>Toyota Forklift Parts, <span>Matched with Care.</span></h1>
+        <p class="sub">Fast sourcing for Toyota filters, brakes, ignition, electrical, hydraulic and service parts. Send a model, serial number, OEM number or photo and we will help confirm the right fit.</p>
+        <div class="hero-points">
+          <div class="hero-point">Toyota 7FG / 8FG / 8FB focus</div>
+          <div class="hero-point">Cross-reference support</div>
+          <div class="hero-point">Single-part orders welcome</div>
+          <div class="hero-point">Sydney dispatch options</div>
+        </div>
+        <div class="hero-btns">
+          <a href="tel:0411790625" class="btn btn-primary">Call 0411 790 625</a>
+          <a href="contact.html" class="btn btn-outline">Request Parts Quote</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Fast parts enquiry">
+        <h2>Need a part identified?</h2>
+        <p>Send the details you have. We can work from a model plate, part number, old part photo or service requirement.</p>
+        <div class="quick-list">
+          <div class="quick-item"><div class="quick-icon">1</div><div><strong>Share machine details</strong><span>Brand, model, serial number or a photo of the plate.</span></div></div>
+          <div class="quick-item"><div class="quick-icon">2</div><div><strong>We check compatibility</strong><span>OEM number, suitable replacement options and practical alternatives.</span></div></div>
+          <div class="quick-item"><div class="quick-icon">3</div><div><strong>Quote and dispatch</strong><span>Clear price, availability and delivery timing before you order.</span></div></div>
+        </div>
+        <form class="mini-form" action="contact.html" method="get">
+          <input id="quickPart" name="part" type="text" placeholder="e.g. Toyota 8FGU25 oil filter"/>
+          <button class="btn-send" type="submit">Ask for Availability</button>
+        </form>
+      </aside>
+    </div>
+  </section>
 
-<!-- ═══ STATS ═══ -->
-<div class="stats">
-  <div class="container">
-    <div class="stat-item"><h3>Sydney</h3><p>Local Supply Base</p></div>
-    <div class="stat-item"><h3>No MOQ</h3><p>Single-Part Orders Welcome</p></div>
-    <div class="stat-item"><h3>OEM</h3><p>Quality-Focused Alternatives</p></div>
-    <div class="stat-item"><h3>Expert</h3><p>Fitment &amp; Part Matching</p></div>
-  </div>
-</div>
-
-<!-- ═══ PRODUCTS ═══ -->
-<section class="products" id="products">
-  <div class="container">
-    <p class="section-tag">What We Supply</p>
-    <h2 class="section-title">Our Product Range</h2>
-    <p class="section-sub">Common service and repair parts for Toyota 8FG / 8FB / 7FG series, with support for equivalent part matching across major forklift brands.</p>
-    <div class="prod-grid">
-      <div class="prod-card">
-        <div class="prod-icon">OF</div>
-        <h3>Oil Filters</h3>
-        <p>Toyota-compatible oil filters and cross-referenced alternatives for routine fleet servicing.</p>
-        <span class="price-from">From $32</span>
-      </div>
-      <div class="prod-card">
-        <div class="prod-icon">AF</div>
-        <h3>Air Filters</h3>
-        <p>Air filtration options for LPG, diesel and electric forklifts, selected by model and duty cycle.</p>
-        <span class="price-from">From $45</span>
-      </div>
-      <div class="prod-card">
-        <div class="prod-icon">FF</div>
-        <h3>Fuel Filters</h3>
-        <p>Inline fuel filters for LPG and diesel engines, matched by forklift model or OEM part number.</p>
-        <span class="price-from">From $30</span>
-      </div>
-      <div class="prod-card">
-        <div class="prod-icon">HY</div>
-        <h3>Hydraulic Filters &amp; Seals</h3>
-        <p>Hydraulic filters, return-line filters and selected seal kits for service and repairs.</p>
-        <span class="price-from">From $78</span>
-      </div>
-      <div class="prod-card">
-        <div class="prod-icon">LED</div>
-        <h3>LED Work Lights</h3>
-        <p>Work lights and warning lights for warehouse and yard environments.</p>
-        <span class="price-from">From $65</span>
-      </div>
-      <div class="prod-card">
-        <div class="prod-icon">IGN</div>
-        <h3>Spark Plugs &amp; Ignition</h3>
-        <p>Spark plugs, ignition switches and service parts for Toyota LPG engines.</p>
-        <span class="price-from">From $18</span>
-      </div>
-      <div class="prod-card">
-        <div class="prod-icon">BRK</div>
-        <h3>Brake Components</h3>
-        <p>Brake pads, shoes, master cylinders and selected wet-brake service items.</p>
-        <span class="price-from">From $45</span>
-      </div>
-      <div class="prod-card">
-        <div class="prod-icon">ELE</div>
-        <h3>Horns &amp; Electrical Parts</h3>
-        <p>12/24V horns, fuses, relays, starter motors, alternators and related electrical parts.</p>
-        <span class="price-from">From $35</span>
-      </div>
-      <div class="prod-card">
-        <div class="prod-icon">GSK</div>
-        <h3>Gaskets &amp; Engine Seals</h3>
-        <p>Valve cover gaskets, oil pan gaskets, hub seals and crankshaft seals for planned maintenance.</p>
-        <span class="price-from">From $26</span>
-      </div>
+  <div class="stats">
+    <div class="container">
+      <div class="stat-item"><h3>Sydney</h3><p>Local Supply Base</p></div>
+      <div class="stat-item"><h3>No MOQ</h3><p>Single-Part Orders Welcome</p></div>
+      <div class="stat-item"><h3>Toyota</h3><p>7FG / 8FG / 8FB Focus</p></div>
+      <div class="stat-item"><h3>Fitment</h3><p>Part Matching Support</p></div>
     </div>
   </div>
-</section>
 
-<!-- ═══ BRANDS ═══ -->
-<div class="brands">
-  <div class="container">
-    <p class="section-tag" style="color:var(--orange)">Compatible Brands</p>
-    <h2 class="section-title" style="text-align:center">Parts for All Major Brands</h2>
-    <div class="brand-list">
-      <div class="brand-chip">Toyota</div>
-      <div class="brand-chip">Hyster</div>
-      <div class="brand-chip">Yale</div>
-      <div class="brand-chip">Crown</div>
-      <div class="brand-chip">Komatsu</div>
-      <div class="brand-chip">Mitsubishi</div>
-      <div class="brand-chip">Linde</div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══ WHY US ═══ -->
-<section class="why" id="why">
-  <div class="container">
-    <p class="section-tag">Why Choose Us</p>
-    <h2 class="section-title">The YL Advantage</h2>
-    <p class="section-sub">A practical supply partner for operators who need the right part identified quickly and delivered without unnecessary friction.</p>
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="why-num">01</div>
-        <h3>Fast Sydney Dispatch</h3>
-        <p>Common service parts are held locally where possible, helping reduce downtime for urgent maintenance jobs.</p>
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="section-tag">Parts Path</p>
+          <h2 class="section-title">Find Toyota Parts Faster</h2>
+        </div>
+        <p class="section-sub">Start with the part category, confirm the machine details, then request a quote with the information your workshop already has.</p>
       </div>
-      <div class="why-card">
-        <div class="why-num">02</div>
-        <h3>No Minimum Order</h3>
-        <p>Need one oil filter or a mixed service pack? Small orders are welcome, with clear pricing before dispatch.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-num">03</div>
-        <h3>Dealer Alternative Pricing</h3>
-        <p>Direct sourcing and careful cross-referencing help keep pricing competitive while maintaining the right fitment standard.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-num">04</div>
-        <h3>Technical Part Matching</h3>
-        <p>Send a model, serial number or part photo and we help confirm compatibility before you order.</p>
+      <div class="grid-3">
+        <a class="tile" href="products.html"><strong>Parts Range</strong><span>Service parts, electrical, brakes, hydraulic parts, seals and common repair items.</span></a>
+        <a class="tile" href="brands.html"><strong>Other Brand Support</strong><span>Toyota-focused support first, with help for selected non-Toyota service parts when details are clear.</span></a>
+        <a class="tile" href="parts-help.html"><strong>Parts Help</strong><span>Useful when you only have a photo, serial number or worn old part.</span></a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ═══ HOW TO ORDER ═══ -->
-<section class="order" id="order">
-  <div class="container">
-    <p class="section-tag">Simple Process</p>
-    <h2 class="section-title">How to Order</h2>
-    <p class="section-sub">A simple ordering flow built for busy workshops, fleet managers and operators.</p>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h3>Tell Us What You Need</h3>
-        <p>Call, text or email with your forklift model, serial number, OEM part number or a clear photo.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h3>Receive Your Quote</h3>
-        <p>Receive a clear quote with unit price, availability, delivery timing and recommended alternatives if needed.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h3>Dispatch or Delivery</h3>
-        <p>Confirm the order and we arrange courier, local delivery or pickup depending on urgency and stock location.</p>
+  <section class="dark-band">
+    <div class="container">
+      <p class="section-tag">Simple Process</p>
+      <h2 class="section-title">From Enquiry to Dispatch</h2>
+      <p class="section-sub">Send the details, confirm the match, receive a quote, then choose pickup, courier or local delivery where available.</p>
+      <div class="hero-btns">
+        <a href="ordering.html" class="btn btn-primary">View Ordering Steps</a>
+        <a href="contact.html" class="btn btn-outline">Start an Enquiry</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
-<!-- ═══ ABOUT ═══ -->
-<section class="about" id="about">
-  <div class="container">
-    <div class="about-inner">
-      <div class="about-text">
-        <p class="section-tag">About Us</p>
-        <h2 class="section-title">Built for Forklift Operators</h2>
-        <p><strong>YL Specialist Engineering Pty Ltd</strong> is a Sydney-based supplier focused on Toyota forklift service parts, especially the 8FG, 8FB and 7FG series used across Australian warehouses, workshops and logistics sites.</p>
-        <p>Founded by <strong>Dr. Louis Liu</strong>, the business combines engineering judgement with practical sourcing. We help customers identify compatible OEM-quality alternatives and avoid the cost and delay of ordering the wrong part.</p>
-        <p>Whether you manage a fleet or need one filter urgently, the service is built around clear communication, careful part matching and fast fulfilment.</p>
-        <div class="about-tag-list">
-          <span class="about-tag">ABN: 21 695 708 984</span>
-          <span class="about-tag">Sydney, NSW</span>
-          <span class="about-tag">Toyota Specialist</span>
-          <span class="about-tag">Technical Part Matching</span>
-        </div>
-      </div>
-      <div class="about-qr">
-        <img src="assets/yl-logo.png" alt="YL Engineering QR Code — Scan to connect"/>
-        <p>YL Specialist Engineering — Toyota forklift parts, Sydney.</p>
-        <a href="tel:0411790625" class="btn btn-primary" style="margin-top:8px">Call Now</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ CONTACT ═══ -->
-<section class="contact" id="contact">
-  <div class="container">
-    <p class="section-tag">Get in Touch</p>
-    <h2 class="section-title">Request a Quote</h2>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h2>Send a model, serial number or part photo. We will help match it.</h2>
-        <div class="contact-row">
-          <div class="c-icon">PH</div>
-          <div>
-            <h4>Phone / WhatsApp</h4>
-            <a href="tel:0411790625">0411 790 625</a>
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="c-icon">EM</div>
-          <div>
-            <h4>Email</h4>
-            <a href="mailto:ylspecialistengineering@gmail.com">ylspecialistengineering@gmail.com</a>
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="c-icon">WEB</div>
-          <div>
-            <h4>Website</h4>
-            <a href="https://ylspecialistengineering.github.io/" target="_blank">ylspecialistengineering.github.io</a>
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="c-icon">NSW</div>
-          <div>
-            <h4>Location</h4>
-            <span>Sydney, NSW, Australia</span>
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="c-icon">HRS</div>
-          <div>
-            <h4>Business Hours</h4>
-            <span>Mon–Fri 7am–6pm AEST</span>
-          </div>
-        </div>
-      </div>
-      <div class="contact-form">
-        <h3>Send an Enquiry</h3>
-        <div class="form-row">
-          <label>Your Name</label>
-          <input type="text" placeholder="e.g. John Smith"/>
-        </div>
-        <div class="form-row">
-          <label>Phone or Email</label>
-          <input type="text" placeholder="How shall we reach you?"/>
-        </div>
-        <div class="form-row">
-          <label>Forklift Brand &amp; Model</label>
-          <select>
-            <option>Toyota 8FGU25</option>
-            <option>Toyota 8FGCU25</option>
-            <option>Toyota 7FG Series</option>
-            <option>Hyster</option>
-            <option>Yale</option>
-            <option>Crown</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <label>Parts Needed</label>
-          <textarea placeholder="e.g. Oil filter ×10, air filter ×5 — or paste OEM part numbers"></textarea>
-        </div>
-        <button class="btn-send" onclick="sendEnquiry()">Send Enquiry &#8594;</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ FOOTER ═══ -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">
-      <img src="assets/yl-logo.png" alt="YL Engineering"/>
-    </div>
+    <div class="footer-logo"><img src="assets/yl-logo.png" alt="YL Specialist Engineering"/></div>
     <div class="footer-links">
-      <a href="#products">Products</a>
-      <a href="#why">Why Us</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="tel:0411790625">0411 790 625</a>
+      <a href="products.html">Products</a><a href="brands.html">Brands</a><a href="parts-help.html">Parts Help</a><a href="ordering.html">Ordering</a><a href="about.html">About</a><a href="contact.html">Contact</a>
     </div>
-    <div class="footer-copy">
-      &copy; 2026 YL Specialist Engineering Pty Ltd &nbsp;|&nbsp; ABN 21 695 708 984 &nbsp;|&nbsp; Sydney, Australia
-    </div>
+    <div class="footer-copy">&copy; 2026 YL Specialist Engineering Pty Ltd | ABN 21 695 708 984 | Sydney, Australia</div>
   </div>
 </footer>
-
-<script>
-// Mobile nav toggle
-document.getElementById('hamburger').addEventListener('click',function(){
-  document.getElementById('navLinks').classList.toggle('open');
-});
-// Close nav on link click
-document.querySelectorAll('.nav-links a').forEach(a=>{
-  a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open'));
-});
-
-// Enquiry form — opens mailto
-function sendEnquiry(){
-  const name  = document.querySelectorAll('.form-row input')[0].value || 'Customer';
-  const reach = document.querySelectorAll('.form-row input')[1].value || '';
-  const model = document.querySelector('.form-row select').value;
-  const parts = document.querySelector('.form-row textarea').value || 'Parts enquiry';
-  const body  = encodeURIComponent(
-    `Hi Louis,
-
-I would like to enquire about parts.
-
-Name: ${name}
-Contact: ${reach}
-Forklift: ${model}
-Parts needed: ${parts}
-
-Thank you`
-  );
-  window.location.href = `mailto:ylspecialistengineering@gmail.com?subject=Parts%20Enquiry%20-%20${encodeURIComponent(model)}&body=${body}`;
-}
-
-// Smooth active nav highlighting
-const sections = document.querySelectorAll('section[id], div.stats');
-const navLinks  = document.querySelectorAll('.nav-links a');
-const observer  = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      navLinks.forEach(a=>a.style.color='');
-      const match = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
-      if(match) match.style.color='var(--orange)';
-    }
-  });
-},{threshold:0.4});
-sections.forEach(s=>observer.observe(s));
-</script>
+<script src="js/site.js"></script>
 </body>
 </html>
