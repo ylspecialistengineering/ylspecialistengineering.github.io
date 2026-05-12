@@ -1,0 +1,58 @@
+[
+  {
+    "ref": "OF.01",
+    "part": "Engine oil filter",
+    "oem": "04152-30060",
+    "application": "Toyota 8FGU25 / 8FG25",
+    "availability": "Confirm on quote"
+  },
+  {
+    "ref": "AF.04",
+    "part": "Air filter element",
+    "oem": "17801-78110-71",
+    "application": "Toyota 7FG / 8FG series",
+    "availability": "Confirm on quote"
+  },
+  {
+    "ref": "FF.07",
+    "part": "LPG fuel filter",
+    "oem": "23300-78201-71",
+    "application": "Toyota 4Y engine",
+    "availability": "Confirm on quote"
+  },
+  {
+    "ref": "HY.12",
+    "part": "Hydraulic return filter",
+    "oem": "67502-23320-71",
+    "application": "Toyota 8FB electric series",
+    "availability": "Confirm on quote"
+  },
+  {
+    "ref": "IGN.02",
+    "part": "Ignition spark plug",
+    "oem": "NGK BPR6ES",
+    "application": "Toyota 4Y LPG",
+    "availability": "Confirm on quote"
+  },
+  {
+    "ref": "BRK.05",
+    "part": "Brake wheel cylinder",
+    "oem": "47410-23320-71",
+    "application": "Toyota 7FG / 8FG",
+    "availability": "Confirm on quote"
+  },
+  {
+    "ref": "GSK.09",
+    "part": "Valve cover gasket",
+    "oem": "11213-78013-71",
+    "application": "Toyota 4Y engine",
+    "availability": "Confirm on quote"
+  },
+  {
+    "ref": "ELE.18",
+    "part": "Starter motor",
+    "oem": "28100-78303-71",
+    "application": "Toyota 4Y LPG",
+    "availability": "Confirm on quote"
+  }
+]

@@ -3,76 +3,144 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Request a Forklift Parts Quote | YL Specialist Engineering</title>
-<meta name="description" content="Contact YL Specialist Engineering for Toyota forklift parts quotes in Sydney. Send model, serial number, OEM number or part photos."/>
+<title>Request a Forklift Parts Quote — YL Specialist Engineering</title>
+<meta name="description" content="Request a quote for Toyota forklift parts. Send the model, serial number, OEM number or a photo and YL will confirm fitment, price and delivery options."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"/>
 <link rel="stylesheet" href="css/site.css"/>
+<link rel="icon" href="assets/yl-logo.png"/>
 </head>
 <body>
-<nav>
-  <a href="index.html" class="nav-logo"><img src="assets/yl-logo.png" alt="YL Specialist Engineering Logo"/></a>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="index.html">Home</a></li><li><a href="products.html">Products</a></li><li><a href="brands.html">Brands</a></li><li><a href="parts-help.html">Parts Help</a></li><li><a href="ordering.html">Ordering</a></li><li><a href="about.html">About</a></li><li><a class="active" href="contact.html"><span class="nav-cta">Get a Quote</span></a></li>
-  </ul>
+
+<div class="utility">
+  <span>YL Specialist Engineering Pty Ltd · ABN 21 695 708 984 · Sydney NSW</span>
+  <span class="right">
+    <span><span class="dot"></span>Toyota parts enquiries · Sydney NSW</span>
+  </span>
+</div>
+
+<header class="topnav">
+  <a href="index.html" class="brand">
+    <span class="brand-mark"><img src="assets/yl-logo.png" alt=""/></span>
+    <span class="brand-text">
+      <span class="name">YL Specialist Engineering</span>
+      <span class="sub">Forklift parts · Australia</span>
+    </span>
+  </a>  <div class="contact-cluster">
+    <a href="tel:0411790625" class="phone">0411 790 625</a>
+    <a href="contact.html" class="btn btn-primary">Request quote</a>
+  </div>
   <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+
+<nav class="catbar" id="navLinks">
+  <a class="" href="index.html">Home</a>
+  <a class="" href="products.html">Parts</a>
+  <a class="" href="brands.html">Brands</a>
+  <a class="" href="parts-help.html">Parts help</a>
+  <a class="" href="ordering.html">Ordering</a>
+  <a class="" href="about.html">About</a>
+  <a class="active" href="contact.html">Contact</a>
 </nav>
 
 <main>
-  <header class="page-hero">
-    <div class="container">
-      <p class="breadcrumb">Contact</p>
-      <h1>Request a <span>Parts Quote.</span></h1>
-      <p>Send a model, serial number, OEM number or part photo. YL will help match the part before you order.</p>
-    </div>
-  </header>
 
-  <section>
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h2>Send the details you have. We will help fill in the gaps.</h2>
-          <div class="contact-row"><div class="c-icon">PH</div><div><h4>Phone / WhatsApp</h4><a href="tel:0411790625">0411 790 625</a></div></div>
-          <div class="contact-row"><div class="c-icon">EM</div><div><h4>Email</h4><a href="mailto:ylspecialistengineering@gmail.com">ylspecialistengineering@gmail.com</a></div></div>
-          <div class="contact-row"><div class="c-icon">WEB</div><div><h4>Website</h4><a href="https://ylspecialistengineering.github.io/" target="_blank">ylspecialistengineering.github.io</a></div></div>
-          <div class="contact-row"><div class="c-icon">NSW</div><div><h4>Location</h4><span>Sydney, NSW, Australia</span></div></div>
-          <div class="contact-row"><div class="c-icon">HRS</div><div><h4>Business Hours</h4><span>Mon-Fri 7am-6pm AEST</span></div></div>
-        </div>
-        <div class="contact-form">
-          <h3>Send an Enquiry</h3>
-          <div class="form-row"><label>Your Name</label><input type="text" placeholder="e.g. John Smith"/></div>
-          <div class="form-row"><label>Phone or Email</label><input type="text" placeholder="How shall we reach you?"/></div>
-          <div class="form-row">
-            <label>Forklift Brand &amp; Model</label>
-            <select>
-              <option>Not sure - please help identify</option>
-              <option>Toyota 8FGU25</option>
-              <option>Toyota 8FGCU25</option>
-              <option>Toyota 7FG Series</option>
-              <option>Toyota 8FB Electric Series</option>
-              <option>Hyster</option>
-              <option>Yale</option>
-              <option>Crown</option>
-              <option>Mitsubishi / Nichiyu</option>
-              <option>Komatsu</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-row"><label>OEM / Part Number</label><input type="text" placeholder="Optional - paste any number visible on the part"/></div>
-          <div class="form-row"><label>Parts Needed</label><textarea placeholder="e.g. Oil filter x10, air filter x5, or describe the old part/photo you can send"></textarea></div>
-          <button class="btn-send" type="button" onclick="sendEnquiry()">Send Enquiry</button>
-          <p class="form-status" aria-live="polite"></p>
-        </div>
+<header class="page-hero">
+  <div class="inner">
+    <p class="breadcrumb">Contact · Parts enquiry</p>
+    <h1>Request a parts quote.</h1>
+    <p>Send the details you have: forklift model, serial number, OEM number or photos of the old part. We will check the match and reply with price, availability and delivery options.</p>
+  </div>
+</header>
+
+<section class="section paper">
+  <div class="wrap" style="padding:0">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="eyebrow">Direct contact</p>
+        <h2>Send what you have. We will help identify it.</h2>
+        <div class="contact-row"><div class="ic">PH</div><div><h4>Phone / WhatsApp</h4><a href="tel:0411790625">+61 411 790 625</a></div></div>
+        <div class="contact-row"><div class="ic">EM</div><div><h4>Email</h4><a href="mailto:ylspecialistengineering@gmail.com">ylspecialistengineering@gmail.com</a></div></div>
+        <div class="contact-row"><div class="ic">MSG</div><div><h4>Best contact method</h4><span>Phone, WhatsApp or email enquiries</span></div></div>
+        <div class="contact-row"><div class="ic">SYD</div><div><h4>Location</h4><span>Sydney NSW, Australia</span></div></div>
+        <div class="contact-row"><div class="ic">ABN</div><div><h4>Business number</h4><span>21 695 708 984</span></div></div>
+        <div class="contact-row"><div class="ic">TIP</div><div><h4>Best details to send</h4><span>Model, serial number, OEM number, quantity and photos of the old part.</span></div></div>
       </div>
+
+      <form class="contact-form" onsubmit="event.preventDefault();sendEnquiry();">
+        <h3>Parts quote form</h3>
+        <div class="form-row"><label>Your name</label><input type="text" placeholder="e.g. John Smith"/></div>
+        <div class="form-row"><label>Phone or email</label><input type="text" placeholder="How shall we reach you?"/></div>
+        <div class="form-row"><label>Company / workshop (optional)</label><input type="text" placeholder="e.g. Smith Forklift Services Pty Ltd"/></div>
+        <div class="form-row">
+          <label>Forklift make &amp; model</label>
+          <select>
+            <option>Not sure — please help identify</option>
+            <option>Toyota 8FGU25</option>
+            <option>Toyota 8FGCU25</option>
+            <option>Toyota 8FG / 8FGU series</option>
+            <option>Toyota 7FG / 7FGCU series</option>
+            <option>Toyota 8FB electric series</option>
+            <option>Toyota reach truck</option>
+            <option>Toyota — other model</option>
+            <option>Hyster</option>
+            <option>Yale</option>
+            <option>Crown</option>
+            <option>Mitsubishi / Nichiyu</option>
+            <option>Komatsu</option>
+            <option>Linde · Nissan · TCM · Clark · other</option>
+          </select>
+        </div>
+        <div class="form-row"><label>OEM / part number</label><input type="text" placeholder="Optional — paste any number visible on the part"/></div>
+        <div class="form-row"><label>Serial number (data plate)</label><input type="text" placeholder="Optional — helps confirm supersession history"/></div>
+        <div class="form-row"><label>Parts needed</label><textarea placeholder="e.g. Oil filter ×10, air filter ×5, hydraulic return filter ×2 — or describe the old part / photograph you can send."></textarea></div>
+        <div class="form-row"><label>Delivery suburb / postcode</label><input type="text" placeholder="e.g. Smithfield NSW 2164"/></div>
+        <button class="btn btn-primary btn-lg" type="submit">Send enquiry →</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 </main>
 
-<footer>
+<footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-logo"><img src="assets/yl-logo.png" alt="YL Specialist Engineering"/></div>
-    <div class="footer-links"><a href="products.html">Products</a><a href="brands.html">Brands</a><a href="parts-help.html">Parts Help</a><a href="ordering.html">Ordering</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
-    <div class="footer-copy">&copy; 2026 YL Specialist Engineering Pty Ltd | ABN 21 695 708 984 | Sydney, Australia</div>
+    <div class="footer-brand">
+      <span class="brand-mark"><img src="assets/yl-logo.png" alt=""/></span>
+      <p>YL Specialist Engineering Pty Ltd helps source Toyota forklift service parts for Australian workshops, fleets and equipment owners.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h5>Catalogue</h5>
+        <a href="products.html">Parts</a>
+        <a href="products.html#service">Service parts</a>
+        <a href="products.html#hydraulic">Hydraulic</a>
+        <a href="products.html#electrical">Electrical</a>
+        <a href="brands.html">Brand coverage</a>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <a href="parts-help.html">Parts help</a>
+        <a href="ordering.html">How to order</a>
+        <a href="parts-help.html#faq">FAQ</a>
+        <a href="about.html">About YL</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="tel:0411790625">+61 411 790 625</a>
+        <a href="mailto:ylspecialistengineering@gmail.com">Email</a>
+        <span>Phone, WhatsApp or email enquiries</span>
+        <span>Sydney NSW, Australia</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-base">
+    <span>© 2026 YL Specialist Engineering Pty Ltd · ABN 21 695 708 984</span>
+    <span>Sydney NSW · Australia</span>
   </div>
 </footer>
+
 <script src="js/site.js"></script>
 </body>
 </html>
