@@ -6,14 +6,61 @@
   if(ham && nav){
     ham.addEventListener('click',()=>nav.classList.toggle('open'));
   }
-  // Contact form
+  const contactEmail = 'ylspecialistengineering@gmail.com';
+
+  function fieldValue(form, selector, fallback){
+    const field = form.querySelector(selector);
+    return field && field.value.trim() ? field.value.trim() : fallback;
+  }
+
   window.sendEnquiry = function(){
+    const form = document.querySelector('.contact-form');
     const status = document.querySelector('.form-status');
+    if(!form) return;
+
+    const name = fieldValue(form, '[name="customerName"]', 'Not provided');
+    const contact = fieldValue(form, '[name="customerContact"]', 'Not provided');
+    const company = fieldValue(form, '[name="company"]', 'Not provided');
+    const model = fieldValue(form, '[name="forkliftModel"]', 'Not sure');
+    const oem = fieldValue(form, '[name="partNumber"]', 'Not provided');
+    const serial = fieldValue(form, '[name="serialNumber"]', 'Not provided');
+    const parts = fieldValue(form, '[name="partsNeeded"]', 'Not provided');
+    const delivery = fieldValue(form, '[name="deliveryLocation"]', 'Not provided');
+
+    const subject = `Parts enquiry - ${model}`;
+    const body = [
+      'Hi Louis,',
+      '',
+      'I would like to request a forklift parts quote.',
+      '',
+      `Name: ${name}`,
+      `Phone or email: ${contact}`,
+      `Company / workshop: ${company}`,
+      `Forklift make and model: ${model}`,
+      `OEM / part number: ${oem}`,
+      `Serial number: ${serial}`,
+      `Parts needed: ${parts}`,
+      `Delivery suburb / postcode: ${delivery}`,
+      '',
+      'Thank you.'
+    ].join('\n');
+
+    const mailto = `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
     if(status){
-      status.textContent = 'Thanks. Your enquiry has been prepared. We will review the details and reply with the next step.';
+      status.innerHTML = `Your email app should open with the enquiry ready to send. If it does not open, email <a href="${mailto}">${contactEmail}</a>.`;
       status.style.color = '#1e7a4d';
     }
+
+    window.location.href = mailto;
   };
+
+  const params = new URLSearchParams(window.location.search);
+  const requestedPart = params.get('part');
+  const partsField = document.querySelector('[name="partsNeeded"]');
+  if(requestedPart && partsField && !partsField.value.trim()){
+    partsField.value = requestedPart;
+  }
   const productTables = document.querySelectorAll('[data-products-table]');
   if(productTables.length){
     fetch('data/catalog.json')

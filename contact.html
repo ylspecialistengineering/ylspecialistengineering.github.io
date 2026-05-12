@@ -70,12 +70,12 @@
 
       <form class="contact-form" onsubmit="event.preventDefault();sendEnquiry();">
         <h3>Parts quote form</h3>
-        <div class="form-row"><label>Your name</label><input type="text" placeholder="e.g. John Smith"/></div>
-        <div class="form-row"><label>Phone or email</label><input type="text" placeholder="How shall we reach you?"/></div>
-        <div class="form-row"><label>Company / workshop (optional)</label><input type="text" placeholder="e.g. Smith Forklift Services Pty Ltd"/></div>
+        <div class="form-row"><label>Your name</label><input name="customerName" type="text" placeholder="e.g. John Smith"/></div>
+        <div class="form-row"><label>Phone or email</label><input name="customerContact" type="text" placeholder="How shall we reach you?"/></div>
+        <div class="form-row"><label>Company / workshop (optional)</label><input name="company" type="text" placeholder="e.g. Smith Forklift Services Pty Ltd"/></div>
         <div class="form-row">
           <label>Forklift make &amp; model</label>
-          <select>
+          <select name="forkliftModel">
             <option>Not sure — please help identify</option>
             <option>Toyota 8FGU25</option>
             <option>Toyota 8FGCU25</option>
@@ -92,11 +92,11 @@
             <option>Linde · Nissan · TCM · Clark · other</option>
           </select>
         </div>
-        <div class="form-row"><label>OEM / part number</label><input type="text" placeholder="Optional — paste any number visible on the part"/></div>
-        <div class="form-row"><label>Serial number (data plate)</label><input type="text" placeholder="Optional — helps confirm supersession history"/></div>
-        <div class="form-row"><label>Parts needed</label><textarea placeholder="e.g. Oil filter ×10, air filter ×5, hydraulic return filter ×2 — or describe the old part / photograph you can send."></textarea></div>
-        <div class="form-row"><label>Delivery suburb / postcode</label><input type="text" placeholder="e.g. Smithfield NSW 2164"/></div>
-        <button class="btn btn-primary btn-lg" type="submit">Send enquiry →</button>
+        <div class="form-row"><label>OEM / part number</label><input name="partNumber" type="text" placeholder="Optional — paste any number visible on the part"/></div>
+        <div class="form-row"><label>Serial number (data plate)</label><input name="serialNumber" type="text" placeholder="Optional — helps confirm supersession history"/></div>
+        <div class="form-row"><label>Parts needed</label><textarea name="partsNeeded" placeholder="e.g. Oil filter ×10, air filter ×5, hydraulic return filter ×2 — or describe the old part / photograph you can send."></textarea></div>
+        <div class="form-row"><label>Delivery suburb / postcode</label><input name="deliveryLocation" type="text" placeholder="e.g. Smithfield NSW 2164"/></div>
+        <button class="btn btn-primary btn-lg" type="submit">Prepare email enquiry →</button>
         <p class="form-status" aria-live="polite"></p>
       </form>
     </div>
